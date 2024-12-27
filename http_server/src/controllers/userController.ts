@@ -15,11 +15,20 @@ export const signupUser = async (req: Request, res: Response) => {
         const salt = await bcrypt.genSalt(5);
         const hashedPassword = await bcrypt.hash(password,salt)
 
-        await User.create({
+       const user = await User.create({
         username:username,
         password:hashedPassword,
         email : email
     })
+    const token = jwt.sign({
+      id : user._id
+  },process.env.JWT_Secret as string)
+  res.cookie("jwt", token, {
+    maxAge: 7 * 24 * 60 * 60 * 1000, // MS
+    httpOnly: true, // prevent XSS attacks cross-site scripting attacks
+    sameSite: "strict", // CSRF attacks cross-site request forgery attacks
+    secure: process.env.NODE_ENV !== "development",
+  });
     res.status(201).json({
       message: "User created successfully",
     })
@@ -51,6 +60,12 @@ export const loginUser = async(req:Request, res:Response) => {
         const token = jwt.sign({
             id : existingUser._id
         },process.env.JWT_Secret as string)
+        res.cookie("jwt", token, {
+          maxAge: 7 * 24 * 60 * 60 * 1000, // MS
+          httpOnly: true, // prevent XSS attacks cross-site scripting attacks
+          sameSite: "strict", // CSRF attacks cross-site request forgery attacks
+          secure: process.env.NODE_ENV !== "development",
+        });
         res.json(token)
     }
     else{
@@ -66,6 +81,34 @@ export const loginUser = async(req:Request, res:Response) => {
     }
 }
 
+//logout user
+export const logoutUser = async(req:Request, res:Response) => {
+    try {
+        res.cookie("jwt", "", { maxAge: 0 });
+        res.status(200).json({ message: "Logged out successfully" });
+      } catch (error) {
+        console.log("Error in logout controller", (error as Error).message);
+        res.status(500).json({ message: "Internal Server Error" });
+      }
+    }
+
+//update user
+export const updateProfile = async(req: Request, res:Response)=>{
+    res.json({
+        message : "feature in progress"
+    })
+}
+
+export const checkAuth = async(req:Request, res:Response) => {
+    try {
+        //@ts-ignore
+        const user = await User.findById(req.userId)  
+      res.status(200).json(user);
+    } catch (error) {
+      console.log("Error in checkAuth controller", (error as Error).message);
+      res.status(500).json({ message: "Internal Server Error" });
+    }
+  };
 // Get profile
 export const getProfile = async(req:Request, res:Response) => {
   //@ts-ignore

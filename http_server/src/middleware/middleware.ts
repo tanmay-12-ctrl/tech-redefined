@@ -6,7 +6,7 @@ dotenv.config();
 
 export const userMiddleware = (req : Request, res : Response , next : NextFunction)=>{
     try{
-        const token: string | undefined = req.headers["authorization"]?.split(" ")[1]
+        const token: string | undefined = req.cookies.jwt;
         console.log(token)
     if(!token){
          res.status(401).json({message : "Unauthorized" })
