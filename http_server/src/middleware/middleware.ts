@@ -7,12 +7,10 @@ dotenv.config();
 export const userMiddleware = (req : Request, res : Response , next : NextFunction)=>{
     try{
         const token: string | undefined = req.cookies.jwt;
-        console.log(token)
     if(!token){
          res.status(401).json({message : "Unauthorized" })
     }
     const decoded = jwt.verify(token as string ,process.env.JWT_Secret as string)
-    console.log(decoded)
     if (decoded){
         //@ts-ignore
         req.userId = decoded.id

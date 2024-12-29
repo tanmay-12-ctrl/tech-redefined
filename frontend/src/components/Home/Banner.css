@@ -1,0 +1,224 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Ensure full screen height */
+    color: white;
+    background: #333; /* Dark background */
+    padding: 0; /* Remove any extra padding */
+    margin: 0; /* Ensure no margin */
+    margin-bottom: 80px;
+  }
+  
+  .banner__slider {
+    margin-top: 20px;
+    height: 100%; /* Ensure the slider also takes full height */
+  }
+  
+  .banner__card {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    height: 100%; /* Make sure the card fills its container */
+  }
+  
+  .banner__cardImage {
+    width: 100%;
+    height: 100%; /* Make sure the image takes up the entire height */
+    object-fit: cover;
+  }
+  
+  /* Customize the navigation buttons */
+  .slick-prev, .slick-next {
+    z-index: 10;
+    color: white;
+    font-size: 20px;
+    opacity: 0.7;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+  
+  .slick-prev:hover, .slick-next:hover {
+    opacity: 1;
+  }
+  
+  /* Styling for dots */
+  .slick-dots {
+    bottom: 10px;
+    text-align: center;
+  }
+  
+  .slick-dots li button:before {
+    color: white;
+  }
+  
+  .slick-center .banner__card {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+  }
+  
+  .slick-center .banner__card img {
+    transform: scale(1.05);
+  }
+  .banner__image {
+    width: 70%;
+    height: 70%; /* Make sure it covers the full banner height */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place the image behind the content */
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Slick slider styles */
+  .banner__slider {
+    position: relative; /* Ensures the slider is above the image */
+    z-index: 1;
+    margin-top: 20px;
+  }
+  
+  /* Card styles */
+  .banner__card {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    height: 100%; /* Ensure the card fills the container */
+  }
+  
+  .banner__cardImage {
+    width: 100%;
+    height: 100%; /* Ensure the image takes up the full height */
+    object-fit: cover;
+  }
+  
+  /* Slick prev/next buttons */
+  .slick-prev, .slick-next {
+    z-index: 10;
+    color: rgb(7, 2, 2);
+    font-size: 20px;
+    opacity: 0.7;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+  
+  .slick-prev:hover, .slick-next:hover {
+    opacity: 1;
+  }
+  
+  /* Dots styles */
+  .slick-dots {
+    bottom: 10px;
+    text-align: center;
+  }
+  
+  .slick-dots li button:before {
+    color: white;
+  }
+  
+  /* Centered card effect */
+  .slick-center .banner__card {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+  }
+  
+  .slick-center .banner__card img {
+    transform: scale(1.05);
+  }
+  
+  /* Post styles */
+  .posts-section {
+    margin-top: 50px; /* Space below banner */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Single post card */
+  .post-card {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 300px; /* Adjust height for posts */
+    position: relative;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Post card image */
+  .post-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Post title and description */
+  .post-card h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .post-card p {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    color: white;
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Scroll fade effect */
+  .fade-on-scroll {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  
+  .fade-on-scroll.fade {
+    opacity: 0.2; /* Fades out the element */
+  }
+  
+  /* Ensuring the fading effect works smoothly */
+  .banner__slider .slick-slide {
+    transition: opacity 1s ease-out;
+  }
+  
+  /* Ensure the slider's content remains in place */
+  .banner__cardImage {
+    transition: opacity 0.3s ease, transform 0.5s ease;
+  }
+  
+  /* Additional styles for smoother transitions */
+  .slick-prev, .slick-next {
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+  }
+  
+  .slick-prev:hover, .slick-next:hover {
+    opacity: 1;
+  }
+  

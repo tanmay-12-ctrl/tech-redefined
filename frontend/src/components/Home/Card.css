@@ -1,0 +1,90 @@
+/* Card container styling */
+.card {
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
+    transition: transform 200ms ease-in-out; /* Slightly slower transition */
+    cursor: pointer;
+    position: relative;
+    background-color: #0e0e0e; /* Ensure card has a white background */
+  }
+  
+  /* Hover effect on card for zoom */
+  .card:hover {
+    transform: scale(1.07);
+  }
+  
+  /* Styling for images inside the card */
+  .card > img {
+    object-fit: cover;
+    min-width: 300px;
+    min-height: 200px;
+    width: 100%;
+  }
+  
+  /* Card info section */
+  .card__info {
+    margin-top: -9px; /* This helps keep the info close to the image */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #222; /* Dark background for card info */
+    color: white;
+    opacity: 0.9; /* Slightly transparent */
+    transition: opacity 0.3s ease; /* Smooth fade in/out */
+  }
+  
+  /* Card heading */
+  .card__info > h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  /* Description text inside card */
+  .card__info > p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #e9dddd; /* Lighter color for description */
+  }
+  
+  /* Actions (like button, comment button) inside card */
+  .card__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  /* Styling for like and comment buttons */
+  .like-button, .comment-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .heart-icon {
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for liked icon */
+  .heart-icon.liked {
+    color: red;
+  }
+  
+  /* Comment button hover effect */
+  .chat-icon {
+    transition: color 0.3s ease;
+  }
+  
+  .chat-icon:hover {
+    color: #1d9bf0; /* Instagram-like hover effect for comment button */
+  }
+  
+  /* Hover effect to show info more clearly */
+  .card:hover .card__info {
+    opacity: 1; /* Show the info fully on hover */
+  }
+  

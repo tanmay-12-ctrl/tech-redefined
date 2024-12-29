@@ -13,6 +13,11 @@ import React,{ useEffect } from "react";
 
 import { Loader } from "lucide-react";
 import { Toaster } from "react-hot-toast";
+import Header from "../src/components/Layout/Header.jsx"
+import Footer from "./components/Layout/Footer.jsx";
+import Home from "./components/Home/Home.jsx"
+import PostUpload from "./components/Post/PostUpload.jsx";
+import PostView from "./components/Post/PostView.jsx"
 
 
 const App = () => {
@@ -36,17 +41,20 @@ const App = () => {
 
   return (
     <div data-theme={theme}>
-      <Navbar />
+      <Header />
 
       <Routes>
-        <Route path="/" element={authUser ? <HomePage /> : <Navigate to="/login" />} />
+        <Route path="/" element={ <Home />} />
+        <Route path="/post/upload" element={authUser ? <PostUpload /> : <Navigate to="/login" />} />
+        <Route path="/post/:id" element={authUser ? <PostView /> : <Navigate to="/login" />} />
+        <Route path="/chat" element={authUser ? <HomePage /> : <Navigate to="/login" />} />
         <Route path="/signup" element={!authUser ? <Auth /> : <Navigate to="/" />} />
         <Route path="/login" element={!authUser ? <Auth /> : <Navigate to="/" />} />
-        <Route path="/settings" element={<SettingsPage />} />
+        <Route path="/chat/settings" element={<SettingsPage />} />
         <Route path="/profile" element={authUser ? <ProfilePage /> : <Navigate to="/login" />} />
       </Routes>
 
-      <Toaster />
+      <Footer />
     </div>
   );
 };
