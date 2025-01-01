@@ -14,6 +14,7 @@ export const showAllPost = async (req: Request, res: Response) => {
 
 export const createNewPost = (req: Request, res: Response) => {
     // create new post
+    console.log(req.body)
     const { title, content, image } = req.body
     const newPost = new Post({
         title: title,

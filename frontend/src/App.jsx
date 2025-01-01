@@ -1,5 +1,3 @@
-import Navbar from "./components/chat/Navbar";
-
 import HomePage from "./pages/HomePage";
 import SettingsPage from "./pages/SettingsPage";
 import ProfilePage from "./pages/ProfilePage";
@@ -18,6 +16,7 @@ import Footer from "./components/Layout/Footer.jsx";
 import Home from "./components/Home/Home.jsx"
 import PostUpload from "./components/Post/PostUpload.jsx";
 import PostView from "./components/Post/PostView.jsx"
+import UserProfile from "./components/UserProfilePage/UserProfilePage.jsx";
 
 
 const App = () => {
@@ -40,9 +39,18 @@ const App = () => {
     );
 
   return (
-    <div data-theme={theme}>
+    <div data-theme={theme} style={{overflow : "hidden"}}>
       <Header />
 
+      <div style={{
+    position: "relative",
+    zIndex: 0,
+    paddingTop: "64px",
+    overflowY: "scroll",
+    height: "100vh",
+    scrollbarWidth: "none", // Firefox
+    msOverflowStyle: "none" // IE and Edge
+    }}>
       <Routes>
         <Route path="/" element={ <Home />} />
         <Route path="/post/upload" element={authUser ? <PostUpload /> : <Navigate to="/login" />} />
@@ -51,10 +59,13 @@ const App = () => {
         <Route path="/signup" element={!authUser ? <Auth /> : <Navigate to="/" />} />
         <Route path="/login" element={!authUser ? <Auth /> : <Navigate to="/" />} />
         <Route path="/chat/settings" element={<SettingsPage />} />
-        <Route path="/profile" element={authUser ? <ProfilePage /> : <Navigate to="/login" />} />
+        <Route path="/profile" element={authUser ? <UserProfile /> : <Navigate to="/login" />} />
       </Routes>
 
       <Footer />
+      </div>
+
+      
     </div>
   );
 };
