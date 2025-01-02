@@ -4,7 +4,7 @@ const initData = require("./data.js");
 const dotenv = require("dotenv")
 dotenv.config();
 
-const Mongo_Url = "mongodb://localhost:27017/Zashion";
+const Mongo_Url ="mongodb+srv://abhinavsmile7:Yiv2jFJkDp15ZkLl@cluster0.hore4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 main().then(()=>{
     console.log("Connected to MongoDB");
@@ -17,7 +17,7 @@ async function main(){
 }
 
 const initDb = async ()=>{
-    await Post.deleteMany({});
+    await Post.deleteMany();
     initData.data = initData.data.map((obj) =>({ 
         
         ...obj,
