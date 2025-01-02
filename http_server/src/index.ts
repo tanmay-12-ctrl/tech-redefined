@@ -7,6 +7,7 @@ import userRouter from "./router/userRouter";
 import postRouter from "./router/postRouter";
 import messageRouter from "./router/messageRouter";
 import { server, app } from "./lib/socket"; // Import the shared server and app
+import trendsRouter from "./router/trendRouter";
 
 dotenv.config();
 
@@ -34,6 +35,7 @@ app.get("/", (req, res) => {
 app.use("/", userRouter);
 app.use("/post", postRouter);
 app.use("/messages", messageRouter);
+app.use("/trends",trendsRouter)
 
 // Start the server
 const PORT = process.env.PORT || 3000;

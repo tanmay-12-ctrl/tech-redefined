@@ -17,6 +17,7 @@ import Home from "./components/Home/Home.jsx"
 import PostUpload from "./components/Post/PostUpload.jsx";
 import PostView from "./components/Post/PostView.jsx"
 import UserProfile from "./components/UserProfilePage/UserProfilePage.jsx";
+import Trends from "./components/Trends/Trends.jsx";
 
 
 const App = () => {
@@ -60,6 +61,7 @@ const App = () => {
         <Route path="/login" element={!authUser ? <Auth /> : <Navigate to="/" />} />
         <Route path="/chat/settings" element={<SettingsPage />} />
         <Route path="/profile" element={authUser ? <UserProfile /> : <Navigate to="/login" />} />
+        <Route path="/trends" element={<Trends /> } />
       </Routes>
 
       <Footer />
