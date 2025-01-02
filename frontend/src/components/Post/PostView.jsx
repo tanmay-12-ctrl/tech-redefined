@@ -40,8 +40,8 @@ function PostView() {
   };
 
   return (
-    <div className="min-h-[calc(100vh-64px)] bg-gradient-to-br from-pink-400 to-blue-600 p-8">
-      <div className="max-w-6xl mx-auto bg-gradient-to-br from-teal-200 to-pink-300 rounded-2xl shadow-2xl overflow-hidden">
+    <div className="min-h-[calc(100vh-64px)] bg-gradient-to-br from-purple-500 to-blue-500 p-6">
+      <div className="max-w-6xl mx-auto bg-gradient-to-br from-teal-200 to-red-300 rounded-2xl shadow-2xl overflow-hidden">
         <div className="flex flex-col md:flex-row h-full">
           {/* Left Section */}
           <div className="md:w-2/3 border-r border-gray-200 p-6">

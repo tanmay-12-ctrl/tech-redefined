@@ -35,8 +35,8 @@ const PostUpload = () => {
   };
 
   return (
-    <div className="h-[calc(100vh-64px)] flex items-center justify-center bg-gradient-to-br from-purple-500 to-blue-500 p-6">
-      <div className="w-[90%] max-w-2xl bg-white rounded-2xl shadow-2xl overflow-hidden">
+    <div className="h-[calc(100vh-64px)] flex items-center justify-center linear-gradient(to right, #1a1a2e, #533483)">
+      <div className="w-[100%] max-w-2xl bg-white rounded-2xl shadow-2xl overflow-hidden">
         <div className="bg-gradient-to-r from-purple-600 to-blue-600 py-4">
           <h3 className="text-2xl font-bold text-center text-white">
             Upload Your Post
