@@ -1,90 +1,113 @@
-/* Card container styling */
+/* General card styling */
 .card {
-    margin: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
-    transition: transform 200ms ease-in-out; /* Slightly slower transition */
-    cursor: pointer;
-    position: relative;
-    background-color: #0e0e0e; /* Ensure card has a white background */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(145deg, #ff89e9, #97139c);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Image styling */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ffffff;
+}
+
+/* Info section */
+.card__info {
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.card__info h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 10px;
+  color: #ffffff;
+}
+
+.card__info p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  color: #f0d9f9;
+}
+
+/* Actions section */
+.card__actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 16px;
+}
+
+/* Like button */
+.like-button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.heart-icon {
+  fill: none;
+  stroke: #ff6b6b;
+  stroke-width: 2.5;
+  transition: fill 0.3s, stroke 0.3s;
+}
+
+.heart-icon.liked {
+  fill: #ff6b6b;
+  stroke: #ff6b6b;
+  transform: scale(1.1);
+  transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+/* Comment button */
+.comment-button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.chat-icon {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2.5;
+  transition: stroke 0.3s ease;
+}
+
+.chat-icon:hover {
+  stroke: #ffcb6b;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
   }
-  
-  /* Hover effect on card for zoom */
-  .card:hover {
-    transform: scale(1.07);
+
+  .card__info h2 {
+    font-size: 20px;
   }
-  
-  /* Styling for images inside the card */
-  .card > img {
-    object-fit: cover;
-    min-width: 300px;
-    min-height: 200px;
-    width: 100%;
-  }
-  
-  /* Card info section */
-  .card__info {
-    margin-top: -9px; /* This helps keep the info close to the image */
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #222; /* Dark background for card info */
-    color: white;
-    opacity: 0.9; /* Slightly transparent */
-    transition: opacity 0.3s ease; /* Smooth fade in/out */
-  }
-  
-  /* Card heading */
-  .card__info > h2 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  
-  /* Description text inside card */
-  .card__info > p {
+
+  .card__info p {
     font-size: 14px;
-    font-weight: 300;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    color: #e9dddd; /* Lighter color for description */
   }
-  
-  /* Actions (like button, comment button) inside card */
-  .card__actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-  }
-  
-  /* Styling for like and comment buttons */
-  .like-button, .comment-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .heart-icon {
-    transition: color 0.3s ease;
-  }
-  
-  /* Hover effect for liked icon */
-  .heart-icon.liked {
-    color: red;
-  }
-  
-  /* Comment button hover effect */
-  .chat-icon {
-    transition: color 0.3s ease;
-  }
-  
-  .chat-icon:hover {
-    color: #1d9bf0; /* Instagram-like hover effect for comment button */
-  }
-  
-  /* Hover effect to show info more clearly */
-  .card:hover .card__info {
-    opacity: 1; /* Show the info fully on hover */
-  }
-  
+}

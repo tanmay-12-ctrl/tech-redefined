@@ -15,40 +15,40 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="absolute z-10 top-0 left-0 right-0 bg-[#0F0D18] text-white py-4 px-6 shadow-lg">
+    <nav className="absolute z-10 top-0 left-0 right-0 bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 text-white py-4 px-8 shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo Section */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-6">
           <Link to="/">
             <img
               src="/logo.png"
               alt="Logo"
-              className="h-18 w-20 inline-block"
+              className="h-16 w-auto inline-block hover:scale-110 transition-transform"
             />
           </Link>
-          <ul className="hidden md:flex space-x-6">
-            <li className="hover:text-purple-300">
+          <ul className="hidden md:flex space-x-8 text-lg font-semibold">
+            <li className="hover:text-yellow-300">
               <Link to="/">Home</Link>
             </li>
-            <li className="hover:text-purple-300">
+            <li className="hover:text-yellow-300">
               <Link to="/chat">Chat</Link>
             </li>
-            <li className="hover:text-purple-300">
+            <li className="hover:text-yellow-300">
               <Link to="/trends">Trends</Link>
             </li>
-            <li className="hover:text-purple-300">
+            <li className="hover:text-yellow-300">
               <Link to="/collaboration">Collaboration</Link>
             </li>
           </ul>
         </div>
 
         {/* Authentication and Actions */}
-        <div className="space-x-4">
+        <div className="space-x-6 flex items-center">
           {authUser ? (
             <button
               type="button"
               onClick={handleLogout}
-              className="hidden md:inline-block px-4 py-2 border border-purple-500 text-purple-500 rounded hover:bg-purple-500 hover:text-white transition"
+              className="hidden md:inline-block px-5 py-2 border border-white text-white rounded-full hover:bg-white hover:text-purple-600 transition-all"
             >
               Logout
             </button>
@@ -56,34 +56,26 @@ export default function Navbar() {
             <Link to="/login">
               <button
                 type="button"
-                className="hidden md:inline-block px-4 py-2 border border-purple-500 text-purple-500 rounded hover:bg-purple-500 hover:text-white transition"
+                className="hidden md:inline-block px-5 py-2 border border-white text-white rounded-full hover:bg-white hover:text-purple-600 transition-all"
               >
                 Login/SignUp
               </button>
             </Link>
           )}
-          <Link to="/chat">
-            {/* <button
-              type="button"
-              className="hidden md:inline-block px-4 py-2 border border-purple-500 text-purple-500 rounded hover:bg-purple-500 hover:text-white transition"
-            >
-              Chat
-            </button> */}
-          </Link>
           <Link to="/post/upload">
             <button
               type="button"
-              className="hidden md:inline-block px-4 py-2 border border-purple-500 text-purple-500 rounded hover:bg-purple-500 hover:text-white transition"
+              className="hidden md:inline-block px-5 py-2 border border-white text-white rounded-full hover:bg-white hover:text-purple-600 transition-all"
             >
               Upload
             </button>
           </Link>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden focus:outline-none text-purple-400">
+          <button className="md:hidden focus:outline-none text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-8 w-8"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
