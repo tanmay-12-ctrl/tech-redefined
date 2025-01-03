@@ -4,7 +4,7 @@
     flex-direction: column;
     gap: 30px;
     padding: 20px;
-    background: linear-gradient(180deg, #0f0c29, #302b63, #24243e);
+    
     color: white;
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
@@ -15,7 +15,7 @@
     margin-bottom: 30px;
     position: relative;
     z-index: 1;
-    background: linear-gradient(90deg, #6b00b6, #440083);
+    background: linear-gradient(145deg, #6b00b6, #08040b);
     color: white;
     text-align: center;
     padding: 50px 20px;
@@ -31,7 +31,7 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    background: rgba(30, 30, 30, 0.85);
+    
     border-radius: 15px;
     padding: 30px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
@@ -92,8 +92,8 @@
 
 /* Hover effects for cards */
 .card__info h2:hover {
-    color: #ff8c00;
-    text-shadow: 0 0 5px #ff8c00, 0 0 10px #ff8c00;
+    color: #7c7c7c;
+    text-shadow: 0 0 5px #1d6d98  0 0 10px #132d72;
 }
 
 /* Loader styling */

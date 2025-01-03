@@ -63,8 +63,8 @@ const RoomManagement = ({ onJoinRoom, userId }) => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen p-8">
+      <div className="max-w-4xl mx-auto space-y-50">
         {userData && (
           <div className="bg-white rounded-lg shadow p-6 mb-6">
             <h2 className="text-2xl font-bold mb-4">Welcome, {userData.username}!</h2>
@@ -72,7 +72,8 @@ const RoomManagement = ({ onJoinRoom, userId }) => {
           </div>
         )}
 
-        <div className="bg-white rounded-lg shadow p-6 mb-6">
+<div className="bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 rounded-lg shadow p-6 mb-6">
+
           <h2 className="text-2xl font-bold mb-4">Create New Room</h2>
           <div className="flex gap-4">
             <input
@@ -80,7 +81,8 @@ const RoomManagement = ({ onJoinRoom, userId }) => {
               value={roomName}
               onChange={(e) => setRoomName(e.target.value)}
               placeholder="Room Name"
-              className="flex-1 p-2 border rounded"
+              className="flex-1 p-2 border-2 rounded-lg bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-300"
+              style={{ color: 'black' }}
             />
             <button
               onClick={createRoom}
@@ -91,7 +93,7 @@ const RoomManagement = ({ onJoinRoom, userId }) => {
           </div>
         </div>
 
-        <div className="bg-white rounded-lg shadow p-6 mb-6">
+        <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 rounded-lg shadow p-6 mb-6">
           <h2 className="text-2xl font-bold mb-4">Join with Code</h2>
           <div className="flex gap-4">
             <input
@@ -99,7 +101,8 @@ const RoomManagement = ({ onJoinRoom, userId }) => {
               value={joinCode}
               onChange={(e) => setJoinCode(e.target.value)}
               placeholder="Enter Room Code"
-              className="flex-1 p-2 border rounded"
+              className="flex-1 p-2 border-2 rounded-lg bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-300"
+              style={{ color: 'black' }}
             />
             <button
               onClick={joinRoomWithCode}
@@ -110,13 +113,13 @@ const RoomManagement = ({ onJoinRoom, userId }) => {
           </div>
         </div>
 
-        <div className="bg-white rounded-lg shadow p-6">
-          <h2 className="text-2xl font-bold mb-4">Available Rooms</h2>
+        <div className="bg-gradient-to-r from-yellow-500  to-blue-500 rounded-lg shadow p-6">
+          <h2 className="text-2xl font-bold mb-4 text-black">Available Rooms</h2>
           <div className="grid gap-4">
             {rooms.map((room) => (
               <div key={room.id} className="border rounded p-4 flex justify-between items-center">
                 <div>
-                  <h3 className="font-semibold">{room.name}</h3>
+                  <h3 className="font-semibold text-black">{room.name}</h3>
                   <p className="text-sm text-gray-500">{room.participants} participants</p>
                 </div>
                 <button

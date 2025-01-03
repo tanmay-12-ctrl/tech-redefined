@@ -9,7 +9,7 @@
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  background: linear-gradient(145deg, #ff89e9, #97139c);
+  background: linear-gradient(145deg, #8d11da, #04100a);
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

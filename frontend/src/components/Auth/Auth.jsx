@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Login from "./Login";
 import Signup from "./SignUp";
 import { useAuthStore } from '../../store/useAuthStore';
-
 export default function Auth() {
 
     const [isActive, setIsActive] = useState(false);
@@ -15,7 +14,7 @@ export default function Auth() {
 
     const handleRegisterClick = (e) => {
         e.preventDefault();
-      signup(formData);
+        signup(formData);
     };
 
     const handleLoginClick = (e) => {

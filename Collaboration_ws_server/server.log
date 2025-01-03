@@ -135,6 +135,7 @@
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
+<<<<<<< HEAD
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
@@ -147,6 +148,71 @@
 {"level":"info","message":"Room deleted: 42e522b9"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
+=======
+{"level":"info","message":"Server running on port 3001"}
+{"level":"error","message":"User not initialized"}
+{"level":"error","message":"User not initialized"}
+{"level":"error","message":"User not initialized"}
+{"level":"error","message":"Failed to fetch user data for userId: undefined"}
+{"level":"error","message":"User not initialized"}
+{"level":"info","message":"Server running on port 3001"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"Room created: 68e919ac by user undefined"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"Room deleted: 68e919ac"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"Room created: cda7854e by user undefined"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"Room deleted: cda7854e"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"Room created: 81ad4082 by user undefined"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"Room deleted: 81ad4082"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"Room created: ee99264e by user undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+>>>>>>> 58ce7cf10656d45cf844708a53c074b07ab23c0b
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+<<<<<<< HEAD
+=======
+{"level":"info","message":"Room deleted: ee99264e"}
+>>>>>>> 58ce7cf10656d45cf844708a53c074b07ab23c0b
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
@@ -164,6 +230,18 @@
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
+<<<<<<< HEAD
+=======
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+>>>>>>> 58ce7cf10656d45cf844708a53c074b07ab23c0b
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
@@ -173,17 +251,52 @@
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
+<<<<<<< HEAD
+=======
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+>>>>>>> 58ce7cf10656d45cf844708a53c074b07ab23c0b
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+<<<<<<< HEAD
+=======
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+>>>>>>> 58ce7cf10656d45cf844708a53c074b07ab23c0b
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+<<<<<<< HEAD
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+=======
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
-{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"Server running on port 3001"}
+>>>>>>> 58ce7cf10656d45cf844708a53c074b07ab23c0b
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
@@ -208,15 +321,7 @@
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
-{"level":"info","message":"User connected: undefined"}
-{"level":"info","message":"User connected: undefined"}
-{"level":"info","message":"User connected: undefined"}
-{"level":"info","message":"User connected: undefined"}
-{"level":"info","message":"User connected: undefined"}
-{"level":"info","message":"User connected: undefined"}
-{"level":"info","message":"User connected: undefined"}
-{"level":"info","message":"User connected: undefined"}
-{"level":"info","message":"User connected: undefined"}
+<<<<<<< HEAD
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
@@ -230,6 +335,8 @@
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
+=======
+>>>>>>> 58ce7cf10656d45cf844708a53c074b07ab23c0b
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
@@ -238,7 +345,10 @@
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
+<<<<<<< HEAD
 {"level":"info","message":"Room created: be00f0da by user undefined"}
+=======
+>>>>>>> 58ce7cf10656d45cf844708a53c074b07ab23c0b
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
@@ -265,6 +375,7 @@
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
+<<<<<<< HEAD
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
@@ -274,6 +385,11 @@
 {"level":"info","message":"Room created: 05d97ea1 by user undefined"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"Room deleted: 05d97ea1"}
+=======
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+>>>>>>> 58ce7cf10656d45cf844708a53c074b07ab23c0b
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
@@ -281,13 +397,19 @@
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
+<<<<<<< HEAD
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
+=======
+>>>>>>> 58ce7cf10656d45cf844708a53c074b07ab23c0b
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
+<<<<<<< HEAD
 {"level":"info","message":"Room created: ecb2a4d6 by user undefined"}
+=======
+>>>>>>> 58ce7cf10656d45cf844708a53c074b07ab23c0b
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
@@ -297,13 +419,43 @@
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
+<<<<<<< HEAD
 {"level":"info","message":"Room deleted: be00f0da"}
+=======
+>>>>>>> 58ce7cf10656d45cf844708a53c074b07ab23c0b
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
+<<<<<<< HEAD
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+=======
+>>>>>>> 58ce7cf10656d45cf844708a53c074b07ab23c0b
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+<<<<<<< HEAD
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+=======
+>>>>>>> 58ce7cf10656d45cf844708a53c074b07ab23c0b
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+<<<<<<< HEAD
+{"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User disconnected: unknown"}
@@ -314,27 +466,15 @@
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
+=======
+{"level":"info","message":"Server running on port 3001"}
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
-{"level":"info","message":"User connected: undefined"}
-{"level":"info","message":"User connected: undefined"}
-{"level":"info","message":"User connected: undefined"}
-{"level":"info","message":"User connected: undefined"}
-{"level":"info","message":"User connected: undefined"}
-{"level":"info","message":"User connected: undefined"}
-{"level":"info","message":"User connected: undefined"}
-{"level":"info","message":"User connected: undefined"}
-{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"Room created: f578c8ff by user undefined"}
+{"level":"info","message":"Room deleted: f578c8ff"}
 {"level":"info","message":"User disconnected: unknown"}
-{"level":"info","message":"User disconnected: unknown"}
-{"level":"info","message":"User disconnected: unknown"}
-{"level":"info","message":"User disconnected: unknown"}
-{"level":"info","message":"User disconnected: unknown"}
-{"level":"info","message":"User disconnected: unknown"}
-{"level":"info","message":"User disconnected: unknown"}
-{"level":"info","message":"User disconnected: unknown"}
-{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
@@ -348,9 +488,28 @@
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
+>>>>>>> 58ce7cf10656d45cf844708a53c074b07ab23c0b
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"User connected: undefined"}
+<<<<<<< HEAD
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+=======
+>>>>>>> 58ce7cf10656d45cf844708a53c074b07ab23c0b
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+<<<<<<< HEAD
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
@@ -384,3 +543,103 @@
 {"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
 {"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
 {"level":"info","message":"User connected: 677128ab248b37d631c8e8b4"}
+=======
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"Room created: 96ed1032 by user undefined"}
+>>>>>>> 58ce7cf10656d45cf844708a53c074b07ab23c0b

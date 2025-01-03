@@ -10,6 +10,7 @@
   "author": "Ujjwal Parashar",
   "license": "ISC",
   "dependencies": {
+    "@types/axios": "^0.14.4",
     "@types/bcrypt": "^5.0.2",
     "@types/cookie-parser": "^1.4.8",
     "@types/express": "^5.0.0",
