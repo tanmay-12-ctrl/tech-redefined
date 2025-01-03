@@ -1,0 +1,137 @@
+{"level":"info","message":"Server running on port 3000"}
+{"level":"info","message":"User connected: 1b199306"}
+{"level":"info","message":"User disconnected: 1b199306"}
+{"level":"info","message":"User connected: 76bfc2ae"}
+{"level":"info","message":"Room created: e3162c14 by user 76bfc2ae"}
+{"level":"info","message":"User 76bfc2ae disconnected from room e3162c14"}
+{"level":"info","message":"Room deleted: e3162c14"}
+{"level":"info","message":"User disconnected: 76bfc2ae"}
+{"level":"info","message":"User connected: 059ccf76"}
+{"level":"info","message":"User disconnected: 059ccf76"}
+{"level":"info","message":"User connected: 1c1a00d5"}
+{"level":"warn","message":"Join-room failed: Room e3162c14 not found for user 1c1a00d5"}
+{"level":"warn","message":"Join-room failed: Room e3162c14 not found for user 1c1a00d5"}
+{"level":"warn","message":"Join-room failed: Room e3162c14 not found for user 1c1a00d5"}
+{"level":"warn","message":"Join-room failed: Room e3162c14 not found for user 1c1a00d5"}
+{"level":"warn","message":"Join-room failed: Room e3162c14 not found for user 1c1a00d5"}
+{"level":"info","message":"Server running on port 3000"}
+{"level":"info","message":"User connected: ee21f00f"}
+{"level":"info","message":"User disconnected: ee21f00f"}
+{"level":"info","message":"User connected: 43a2129b"}
+{"level":"info","message":"Room created: 32591b00 by user 43a2129b"}
+{"level":"info","message":"User 43a2129b disconnected from room 32591b00"}
+{"level":"info","message":"Room deleted: 32591b00"}
+{"level":"info","message":"User disconnected: 43a2129b"}
+{"level":"info","message":"Server running on port 3000"}
+{"level":"info","message":"User connected: d1ee8334"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: 08e2107d"}
+{"level":"info","message":"Room created: cb1b0443 by user 08e2107d"}
+{"level":"info","message":"Room deleted: cb1b0443"}
+{"level":"info","message":"Server running on port 3000"}
+{"level":"info","message":"User connected: ac6c7458"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: b32f6029"}
+{"level":"info","message":"Room created: fd786760 by user b32f6029"}
+{"level":"info","message":"Room deleted: fd786760"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: 615a740e"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: a33a0fef"}
+{"level":"info","message":"Room created: e714fae7 by user a33a0fef"}
+{"level":"info","message":"Room deleted: e714fae7"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"Server running on port 3000"}
+{"level":"info","message":"User connected: 41678a59"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: 6eb811f7"}
+{"level":"info","message":"Room created: 11a570e0 by user 6eb811f7"}
+{"level":"info","message":"Room deleted: 11a570e0"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: 94184aac"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: b9d0b28f"}
+{"level":"info","message":"Room created: b572da5e by user b9d0b28f"}
+{"level":"info","message":"Room deleted: b572da5e"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: 55e38cb6"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: b96770f7"}
+{"level":"info","message":"Server running on port 3000"}
+{"level":"info","message":"User connected: 7f337312"}
+{"level":"info","message":"User connected: dcc623ba"}
+{"level":"info","message":"Room created: 73e6f69c by user dcc623ba"}
+{"level":"info","message":"User connected: e35efd10"}
+{"level":"info","message":"User connected: c183ad1e"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: d9b28495"}
+{"level":"info","message":"User connected: 45b8149d"}
+{"level":"info","message":"Room deleted: 73e6f69c"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: ffcc43ca"}
+{"level":"info","message":"User connected: 2ef50366"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"Server running on port 3001"}
+{"level":"info","message":"Server running on port 3001"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"Server running on port 3001"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"Room created: 060f9579 by user undefined"}
+{"level":"info","message":"Room deleted: 060f9579"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"Room created: 42e522b9 by user undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"Room created: 0185c5e6 by user undefined"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"Room deleted: 0185c5e6"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
+{"level":"info","message":"User connected: undefined"}
