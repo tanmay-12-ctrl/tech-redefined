@@ -12,6 +12,7 @@ const RoomManagement = ({ onJoinRoom, userId }) => {
 
     socket.onopen = () => {
       // Send the user ID to initialize the user on the backend
+      console.log(userId)
       socket.send(JSON.stringify({ type: 'init-user', userId }));
     };
 
@@ -66,7 +67,7 @@ const RoomManagement = ({ onJoinRoom, userId }) => {
       <div className="max-w-4xl mx-auto">
         {userData && (
           <div className="bg-white rounded-lg shadow p-6 mb-6">
-            <h2 className="text-2xl font-bold mb-4">Welcome, {userData.name}!</h2>
+            <h2 className="text-2xl font-bold mb-4">Welcome, {userData.username}!</h2>
             <p className="text-gray-600">Email: {userData.email}</p>
           </div>
         )}

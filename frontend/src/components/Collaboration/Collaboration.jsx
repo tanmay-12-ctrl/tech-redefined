@@ -5,6 +5,8 @@ import { useAuthStore } from '../../store/useAuthStore';
 
 export default function Collaboration(){
     const { authUser } = useAuthStore();
+    console.log("inside coolab")
+    console.log(authUser)
     const [currentRoom, setCurrentRoom] = useState(null);
   const [ws, setWs] = useState(null);
 
@@ -20,13 +22,18 @@ export default function Collaboration(){
   };
 
   return currentRoom ? (
+    <div>
     <DrawingRoom
       roomId={currentRoom}
       ws={ws}
       onLeaveRoom={handleLeaveRoom}
-      user = {authUser}
+      userId = {authUser._id}
     />
+    </div>
   ) : (
-    <RoomManagement onJoinRoom={handleJoinRoom} user ={authUser} />
+    <div className='flex justify-center items-center h-full mb-0!'>
+    <RoomManagement onJoinRoom={handleJoinRoom} userId ={authUser._id} />
+    </div>
   );
+  
 }

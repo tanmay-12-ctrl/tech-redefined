@@ -224,61 +224,61 @@ const DrawingRoom = ({ roomId, ws, onLeaveRoom , user}) => {
   };
 
   return (
-    <div className="relative h-screen bg-gray-100">
-      <div className="absolute top-0 left-0 right-0 z-10 bg-white shadow-md">
+    <div className="relative h-screen bg-black">
+      <div className="absolute top-0 left-0 right-0 z-10 shadow-md bg-gray-900 text-gray-100">
         <div className="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <span className="font-semibold">Room: {roomId}</span>
             <button
               onClick={() => setShowParticipants(!showParticipants)}
-              className="p-2 hover:bg-gray-100 rounded-full"
+              className="p-2 hover:bg-gray-700 rounded-full"
             >
-              <FaUsers />
+              <FaUsers className="text-gray-200" />
             </button>
           </div>
-          
+  
           <div className="flex gap-2">
             <button
-              className={`p-2 rounded ${action === ACTIONS.SELECT ? 'bg-blue-100' : 'hover:bg-gray-100'}`}
+              className={`p-2 rounded ${action === ACTIONS.SELECT ? 'bg-blue-600' : 'hover:bg-gray-700'}`}
               onClick={() => setAction(ACTIONS.SELECT)}
             >
-              <GiArrowCursor />
+              <GiArrowCursor className="text-gray-200" />
             </button>
             <button
-              className={`p-2 rounded ${action === ACTIONS.RECTANGLE ? 'bg-blue-100' : 'hover:bg-gray-100'}`}
+              className={`p-2 rounded ${action === ACTIONS.RECTANGLE ? 'bg-blue-600' : 'hover:bg-gray-700'}`}
               onClick={() => setAction(ACTIONS.RECTANGLE)}
             >
-              <TbRectangle />
+              <TbRectangle className="text-gray-200" />
             </button>
             <button
-              className={`p-2 rounded ${action === ACTIONS.CIRCLE ? 'bg-blue-100' : 'hover:bg-gray-100'}`}
+              className={`p-2 rounded ${action === ACTIONS.CIRCLE ? 'bg-blue-600' : 'hover:bg-gray-700'}`}
               onClick={() => setAction(ACTIONS.CIRCLE)}
             >
-              <FaRegCircle />
+              <FaRegCircle className="text-gray-200" />
             </button>
             <button
-              className={`p-2 rounded ${action === ACTIONS.ARROW ? 'bg-blue-100' : 'hover:bg-gray-100'}`}
+              className={`p-2 rounded ${action === ACTIONS.ARROW ? 'bg-blue-600' : 'hover:bg-gray-700'}`}
               onClick={() => setAction(ACTIONS.ARROW)}
             >
-              <FaLongArrowAltRight />
+              <FaLongArrowAltRight className="text-gray-200" />
             </button>
             <button
-              className={`p-2 rounded ${action === ACTIONS.SCRIBBLE ? 'bg-blue-100' : 'hover:bg-gray-100'}`}
+              className={`p-2 rounded ${action === ACTIONS.SCRIBBLE ? 'bg-blue-600' : 'hover:bg-gray-700'}`}
               onClick={() => setAction(ACTIONS.SCRIBBLE)}
             >
-              <LuPencil />
+              <LuPencil className="text-gray-200" />
             </button>
             <button
-              className={`p-2 rounded ${action === ACTIONS.TEXT ? 'bg-blue-100' : 'hover:bg-gray-100'}`}
+              className={`p-2 rounded ${action === ACTIONS.TEXT ? 'bg-blue-600' : 'hover:bg-gray-700'}`}
               onClick={() => setAction(ACTIONS.TEXT)}
             >
-              <FaFont />
+              <FaFont className="text-gray-200" />
             </button>
             <input
               type="color"
               value={fillColor}
               onChange={(e) => setFillColor(e.target.value)}
-              className="w-8 h-8 p-0 border-0"
+              className="w-8 h-8 p-0 border-0 bg-gray-800 rounded-full"
             />
             <button
               onClick={() => {
@@ -290,23 +290,23 @@ const DrawingRoom = ({ roomId, ws, onLeaveRoom , user}) => {
                 link.click();
                 document.body.removeChild(link);
               }}
-              className="p-2 hover:bg-gray-100 rounded"
+              className="p-2 hover:bg-gray-700 rounded"
             >
-              <IoMdDownload />
+              <IoMdDownload className="text-gray-200" />
             </button>
           </div>
-
+  
           <button
             onClick={onLeaveRoom}
-            className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+            className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700"
           >
             Leave Room
           </button>
         </div>
       </div>
-
+  
       {showParticipants && (
-        <div className="absolute top-16 right-0 w-64 bg-white shadow-lg z-10 p-4">
+        <div className="absolute top-16 right-0 w-64 bg-gray-800 shadow-lg z-10 p-4 text-gray-100">
           <h3 className="font-bold mb-2">Participants ({participants.length})</h3>
           {participants.map(participant => (
             <div key={participant.id} className="py-2 flex items-center gap-2">
@@ -316,7 +316,7 @@ const DrawingRoom = ({ roomId, ws, onLeaveRoom , user}) => {
           ))}
         </div>
       )}
-
+  
       <Stage
         ref={stageRef}
         width={window.innerWidth}
@@ -329,9 +329,9 @@ const DrawingRoom = ({ roomId, ws, onLeaveRoom , user}) => {
           <Rect
             width={window.innerWidth}
             height={window.innerHeight}
-            fill="#ffffff"
+            fill="#1a1a1a"
           />
-
+  
           {shapes.rectangles.map(rect => (
             <Rect
               key={rect.id}
@@ -341,7 +341,7 @@ const DrawingRoom = ({ roomId, ws, onLeaveRoom , user}) => {
               onTransformEnd={(e) => handleTransformEnd(e, rect.id, 'rectangles')}
             />
           ))}
-
+  
           {shapes.circles.map(circle => (
             <Circle
               key={circle.id}
@@ -350,7 +350,7 @@ const DrawingRoom = ({ roomId, ws, onLeaveRoom , user}) => {
               onDragEnd={(e) => handleDragEnd(e, circle.id, 'circles')}
             />
           ))}
-
+  
           {shapes.arrows.map(arrow => (
             <Arrow
               key={arrow.id}
@@ -359,7 +359,7 @@ const DrawingRoom = ({ roomId, ws, onLeaveRoom , user}) => {
               onDragEnd={(e) => handleDragEnd(e, arrow.id, 'arrows')}
             />
           ))}
-
+  
           {shapes.scribbles.map(scribble => (
             <Line
               key={scribble.id}
@@ -372,7 +372,7 @@ const DrawingRoom = ({ roomId, ws, onLeaveRoom , user}) => {
               onDragEnd={(e) => handleDragEnd(e, scribble.id, 'scribbles')}
             />
           ))}
-
+  
           {shapes.text.map(text => (
             <Text
               key={text.id}
@@ -385,7 +385,7 @@ const DrawingRoom = ({ roomId, ws, onLeaveRoom , user}) => {
               onDragEnd={(e) => handleDragEnd(e, text.id, 'text')}
             />
           ))}
-
+  
           {selectedId && action === ACTIONS.SELECT && (
             <Transformer
               ref={transformerRef}
@@ -397,7 +397,6 @@ const DrawingRoom = ({ roomId, ws, onLeaveRoom , user}) => {
         </Layer>
       </Stage>
     </div>
-  );
-};
+  )}
 
 export default DrawingRoom;
