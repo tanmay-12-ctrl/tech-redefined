@@ -40,6 +40,7 @@ const Signup = ({ handleRegisterClick, onSubmit }) => {
           placeholder="Name"
           value={formData.username}
           onChange={handleChange}
+          style={{ color: 'black' }}
         />
         <input
           type="email"
@@ -47,6 +48,7 @@ const Signup = ({ handleRegisterClick, onSubmit }) => {
           placeholder="Email"
           value={formData.email}
           onChange={handleChange}
+          style={{ color: 'black' }}
         />
         <input
           type="password"
@@ -54,6 +56,7 @@ const Signup = ({ handleRegisterClick, onSubmit }) => {
           placeholder="Password"
           value={formData.password}
           onChange={handleChange}
+          style={{ color: 'black' }}
         />
         <button type="submit">Sign Up</button>
       </form>

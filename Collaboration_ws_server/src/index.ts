@@ -56,7 +56,7 @@ const users: Map<WebSocket, User> = new Map();
 // Simulate database call to fetch user data
 async function fetchUserData(userId: string): Promise<any> {
     mongoose
-  .connect("mongodb://localhost:27017/Zashion" as string)
+  .connect("mongodb+srv://abhinavsmile7:Yiv2jFJkDp15ZkLl@cluster0.hore4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0" as string)
   .then(() => {
     console.log("Connected to the database");
   })

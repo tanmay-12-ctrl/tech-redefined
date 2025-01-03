@@ -15,13 +15,13 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="absolute z-10 top-0 left-0 right-0 bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 text-white py-4 px-8 shadow-md">
+    <nav className="absolute z-10 top-0 left-0 right-0 bg-gradient-to-r from-purple-800 via-black to-purple-800 text-white py-4 px-8 shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo Section */}
         <div className="flex items-center space-x-6">
           <Link to="/">
             <img
-              src="/logo.png"
+              src="/newlogo2.png"
               alt="Logo"
               className="h-16 w-auto inline-block hover:scale-110 transition-transform"
             />

@@ -42,7 +42,7 @@ const users = new Map();
 function fetchUserData(userId) {
     return __awaiter(this, void 0, void 0, function* () {
         mongoose_1.default
-            .connect("mongodb://localhost:27017/Zashion")
+            .connect("mongodb+srv://abhinavsmile7:Yiv2jFJkDp15ZkLl@cluster0.hore4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
             .then(() => {
             console.log("Connected to the database");
         })

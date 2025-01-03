@@ -38,6 +38,7 @@ const Login = ({ handleLoginClick }) => {
           placeholder="Username"
           value={formData.username}
           onChange={handleChange}
+          style={{ color: 'black' }}
         />
         <input
           type="password"
@@ -45,6 +46,7 @@ const Login = ({ handleLoginClick }) => {
           placeholder="Password"
           value={formData.password}
           onChange={handleChange}
+          style={{ color: 'black' }}
         />
         <a href="#">Forgot your password?</a>
         <button type="submit">Sign In</button>

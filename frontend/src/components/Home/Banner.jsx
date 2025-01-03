@@ -51,6 +51,7 @@ function Banner() {
     centerMode: false,
     adaptiveHeight: true,
     dots: true,
+    prevArrow: null, // Remove the "Previous" button
   };
 
   return (

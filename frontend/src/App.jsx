@@ -41,7 +41,7 @@ const App = () => {
     );
 
   return (
-    <div data-theme={theme} style={{overflow : "hidden"}}>
+    <div data-theme={theme} style={{overflow : "hidden"}}  >
       <Header />
 
       <div style={{
@@ -50,10 +50,13 @@ const App = () => {
     paddingTop: "64px",
     overflowY: "scroll",
     height: "100vh",
+    maxWidth: "100vw",
     scrollbarWidth: "none", // Firefox
-    msOverflowStyle: "none" // IE and Edge
+    msOverflowStyle: "none", // IE and Edge
+    marginTop:"11rem"
     }}>
       <Routes>
+
         <Route path="/" element={ <Home />} />
         <Route path="/post/upload" element={authUser ? <PostUpload /> : <Navigate to="/login" />} />
         <Route path="/post/:id" element={authUser ? <PostView /> : <Navigate to="/login" />} />
