@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { HeartIcon } from "@heroicons/react/24/outline";
 import { HeartIcon as FilledHeartIcon } from "@heroicons/react/24/solid";
-import { useParams } from "react-router-dom";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { axiosInstance } from "../../lib/axios";
+import { Link } from "react-router-dom";
 
 function PostView() {
   const { id } = useParams();
   const [data,setData] = useState()
   const [Loading, setLoading] = useState(true)
+  const navigate = useNavigate();
   
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axiosInstance.get(`/post/${id}`);
-        console.log(response.data)
         setData(response.data)
         setLoading(false)
         // Handle the data
@@ -30,6 +31,9 @@ function PostView() {
     { user: "user2", comment: "Great work!" },
     { user: "user3", comment: "So creative!" },
   ]);
+  const handleClick = ()=>{
+    navigate(`/profile/${data.owner._id}`);
+  }
 
   const handleLike = () => {
     setLiked(!liked);
@@ -44,21 +48,18 @@ function PostView() {
     }
   };
   if(Loading)return (
-    <div className="flex justify-center items-center h-screen">
-      <div className="animate-spin rounded-full p-12 border-4 border-blue-500">
-        Loading..
-      </div>
-    </div>
+    <div>Loading...</div>
   )
 else{
   return (
     <div className="w-screen px-32 pb-20">
-    <div className="min-h-[calc(100vh-64px)] bg-gradient-to-br from-purple-500 to-blue-500 p-6 rounded-2xl">
+    <div className="min-h-[calc(100vh-64px)]  rounded-2xl">
       <div className="max-w-6xl mx-auto bg-gradient-to-br from-teal-200 to-red-300 rounded-2xl shadow-2xl overflow-hidden">
         <div className="flex flex-col md:flex-row h-full">
           {/* Left Section */}
           <div className="md:w-2/3 border-r border-gray-200 p-6">
             {/* Header */}
+            <button onClick={handleClick}>
             <div className="flex items-center gap-3 mb-4">
               <img
                 src="/avatar.png"
@@ -67,6 +68,7 @@ else{
               />
               <span className="font-semibold text-xl text-gray-800">{data.owner.username}</span>
             </div>
+            </button>
 
             {/* Main Image */}
             <div className="relative mb-6">

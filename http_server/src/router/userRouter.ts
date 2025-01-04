@@ -14,10 +14,10 @@ userRouter.post('/login', loginUser);
 userRouter.post("/logout", logoutUser)
 
 //change the profile
-userRouter.put("/update-profile", userMiddleware, updateProfile);
+userRouter.put("/update-profile/:id", userMiddleware, updateProfile);
 
 // Profile route
-userRouter.get('/dashboard',userMiddleware, getProfile);
+userRouter.get('/dashboard/:id',userMiddleware, getProfile);
 
 //check auth
 userRouter.get("/check", userMiddleware, checkAuth);

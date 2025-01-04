@@ -5,7 +5,6 @@ export const showAllPost = async (req: Request, res: Response) => {
     // show all post
     try {
         const posts = await Post.find()
-        console.log("reached")
         res.status(200).json(posts)
     } catch (err) {
         res.status(500).json({ message: (err as Error).message })

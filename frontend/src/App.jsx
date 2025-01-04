@@ -62,7 +62,7 @@ const App = () => {
         <Route path="/signup" element={!authUser ? <Auth /> : <Navigate to="/" />} />
         <Route path="/login" element={!authUser ? <Auth /> : <Navigate to="/" />} />
         <Route path="/chat/settings" element={<SettingsPage />} />
-        <Route path="/profile" element={authUser ? <UserProfile /> : <Navigate to="/login" />} />
+        <Route path="/profile/:id" element={authUser ? <UserProfile /> : <Navigate to="/login" />} />
         <Route path="/collaboration" element={authUser ? <Collaboration /> : <Navigate to="/login" />} />
         <Route path="/trends" element={<Trends /> } />
       </Routes>

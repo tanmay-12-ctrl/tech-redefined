@@ -643,3 +643,46 @@
 {"level":"info","message":"User connected: undefined"}
 {"level":"info","message":"Room created: 96ed1032 by user undefined"}
 >>>>>>> 58ce7cf10656d45cf844708a53c074b07ab23c0b
+{"level":"info","message":"Server running on port 3001"}
+{"level":"info","message":"User connected: 6777df144af453ea090d41d9"}
+{"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User connected: 6777df144af453ea090d41d9"}
+{"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User disconnected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User disconnected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User disconnected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User disconnected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User disconnected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User disconnected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User disconnected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User disconnected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User disconnected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User disconnected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"Room created: 83d78deb by user 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User disconnected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User disconnected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"Room deleted: 83d78deb"}
+{"level":"info","message":"User disconnected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"Room created: 90ed3c2c by user 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"Room deleted: 90ed3c2c"}
+{"level":"info","message":"User disconnected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"Room created: 480c5587 by user 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
+{"level":"info","message":"User connected: 677128ab248b37d631c8e8b4"}
