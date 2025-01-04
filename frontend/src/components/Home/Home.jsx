@@ -30,6 +30,7 @@ function Home() {
   }, []);
 
   return (
+    <div className='px-20 py-0'>
     <div className="home">
       <div className="home__banner">
         <Banner />
@@ -53,6 +54,7 @@ function Home() {
           <div className="home__noPosts">No posts available</div>
         )}
       </div>
+    </div>
     </div>
   );
 }

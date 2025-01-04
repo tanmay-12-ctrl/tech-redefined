@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Bar, Pie, Line } from "react-chartjs-2";
 import "chart.js/auto";
 import { axiosInstance } from "../../lib/axios";
-import { Card, CardContent, CardHeader, CardTitle } from "./card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./card";
 
 const Trends = () => {
   const [chartData, setChartData] = useState(null);
@@ -96,14 +96,20 @@ const Trends = () => {
   };
 
   return (
+    <div className="w-screen">
+      <div className="flex flex-col justify-center items-center">
+      <h1 className="text-4xl font-bold text-center mb-8">
+    Data Analysis & Statistics
+  </h1>
+  <p className="text-center max-w-2xl mx-auto mb-12 text-gray-400">
+    Explore the performance metrics of various categories and gain insights
+    into the distribution of audience engagement.
+  </p>
     <div className="container mx-auto px-6 py-8 max-w-7xl">
-      <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">
-        Engagement Analytics
-      </h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
         {/* Bar Chart */}
-        <Card className="w-full">
+        <Card className="w-full bg-[#181414] border-[#181414]">
           <CardHeader>
             <CardTitle className="text-xl font-semibold">Category Performance</CardTitle>
           </CardHeader>
@@ -127,7 +133,7 @@ const Trends = () => {
         </Card>
 
         {/* Pie Chart */}
-        <Card className="w-full">
+        <Card className="w-full bg-[#181414] border-[#181414]">
           <CardHeader>
             <CardTitle className="text-xl font-semibold">Share Distribution</CardTitle>
           </CardHeader>
@@ -160,7 +166,7 @@ const Trends = () => {
       </div>
 
       {/* Line Chart - Full Width */}
-      <Card className="w-full">
+      <Card className="w-full bg-[#181414] border-[#181414]">
         <CardHeader>
           <CardTitle className="text-xl font-semibold">Trend Analysis</CardTitle>
         </CardHeader>
@@ -193,6 +199,9 @@ const Trends = () => {
           </div>
         </CardContent>
       </Card>
+    </div>
+      </div>
+    
     </div>
   );
 };
