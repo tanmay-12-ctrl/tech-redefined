@@ -41,6 +41,11 @@ const UserSchema = new mongoose_1.Schema({
         required: true,
         unique: true
     },
+    profilePhoto: {
+        type: String,
+        default: ''
+    },
+    description: String,
     email: {
         type: String,
         required: true
@@ -48,6 +53,10 @@ const UserSchema = new mongoose_1.Schema({
     password: {
         type: String,
         required: true
-    }
+    },
+    posts: [{
+            type: mongoose_1.Schema.Types.ObjectId,
+            ref: 'Post',
+        }]
 });
 exports.User = mongoose_1.default.model('User', UserSchema);

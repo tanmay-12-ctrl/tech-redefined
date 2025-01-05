@@ -20,6 +20,7 @@ const cors_1 = __importDefault(require("cors"));
 const winston_1 = __importDefault(require("winston"));
 const mongoose_1 = __importDefault(require("mongoose"));
 const userSchema_1 = require("./userSchema");
+const MongoDb_Url_Local = "mongodb://localhost:27017/Zashion";
 // Initialize logger
 const logger = winston_1.default.createLogger({
     level: 'info',
@@ -42,7 +43,7 @@ const users = new Map();
 function fetchUserData(userId) {
     return __awaiter(this, void 0, void 0, function* () {
         mongoose_1.default
-            .connect("mongodb+srv://abhinavsmile7:Yiv2jFJkDp15ZkLl@cluster0.hore4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+            .connect(MongoDb_Url_Local)
             .then(() => {
             console.log("Connected to the database");
         })
