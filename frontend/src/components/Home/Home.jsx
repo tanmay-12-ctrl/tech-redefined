@@ -47,6 +47,7 @@ function Home() {
                 src={item.image}
                 description={item.content}
                 title={item.title}
+                likeCount = {item.likeCount}
               />
             ))}
           </div>

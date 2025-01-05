@@ -2692,3 +2692,14 @@
 {"level":"info","message":"User connected: 6778b983df2a55bdfa8964fd"}
 {"level":"info","message":"User connected: 6778b983df2a55bdfa8964fd"}
 {"level":"info","message":"User connected: 6778b983df2a55bdfa8964fd"}
+{"level":"info","message":"Server running on port 3001"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"Server running on port 3001"}
+{"level":"info","message":"Server running on port 3001"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"User disconnected: unknown"}

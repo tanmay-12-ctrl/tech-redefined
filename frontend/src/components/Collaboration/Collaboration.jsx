@@ -5,8 +5,6 @@ import { useAuthStore } from '../../store/useAuthStore';
 
 export default function Collaboration(){
     const { authUser } = useAuthStore();
-    console.log("inside coolab")
-    console.log(authUser)
     const [currentRoom, setCurrentRoom] = useState(null);
   const [ws, setWs] = useState(null);
 
@@ -27,7 +25,7 @@ export default function Collaboration(){
       roomId={currentRoom}
       ws={ws}
       onLeaveRoom={handleLeaveRoom}
-      userId = {authUser._id}
+      user = {authUser}
     />
     </div>
   ) : (

@@ -1,134 +1,112 @@
 const sampleListings = [
   {
-    title: "Cozy Beachfront Cottage",
+    title: "Elegant Winter Overcoat",
     content:
-      "Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.",
-    image:
-      "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "Stay warm and stylish with this cozy winter overcoat. Perfect for chilly evenings and making a statement.",
+    image: "https://images.pexels.com/photos/1631181/pexels-photo-1631181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     likeCount: 42,
-    category: "Outwear",
+    category: "Tops",
     owner: "6778ed84ca95ac82a2d27792",
   },
   {
-    title: "Modern Loft in Downtown",
+    title: "Chic Urban Outfit",
     content:
-      "Stay in the heart of the city in this stylish loft apartment. Perfect for urban explorers!",
-    image:
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "Step out in style with this modern urban look. Perfect for exploring the city with a touch of class.",
+    image: "https://images.pexels.com/photos/1805412/pexels-photo-1805412.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     likeCount: 67,
     category: "Tops",
     owner: "6778ed84ca95ac82a2d27794",
   },
   {
-    title: "Mountain Retreat",
+    title: "Relaxed Summer Dress",
     content:
-      "Unplug and unwind in this peaceful mountain cabin. Surrounded by nature, it's a perfect place to recharge.",
-    image:
-      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWxzfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+      "Breeze through summer in this lightweight and elegant dress. Ideal for sunny days and casual outings.",
+    image: "https://images.pexels.com/photos/1839904/pexels-photo-1839904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     likeCount: 12,
-    category: "Footwear",
+    category: "Dresses",
     owner: "6778ed84ca95ac82a2d27796",
   },
   {
-    title: "Historic Villa in Tuscany",
+    title: "Sophisticated Evening Gown",
     content:
-      "Experience the charm of Tuscany in this beautifully restored villa. Explore the rolling hills and vineyards.",
-    image:
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWxzfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+      "Turn heads at any event with this stunning evening gown. Perfect for formal gatherings and special occasions.",
+    image: "https://images.pexels.com/photos/4277259/pexels-photo-4277259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     likeCount: 89,
     category: "Dresses",
     owner: "6778ed84ca95ac82a2d27798",
   },
   {
-    title: "Secluded Treehouse Getaway",
+    title: "Trendy Accessories Collection",
     content:
-      "Live among the treetops in this unique treehouse retreat. A true nature lover's paradise.",
-    image:
-      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdGVsc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "Complete your look with our exclusive collection of accessories. From statement jewelry to chic handbags.",
+    image: "https://images.pexels.com/photos/3596777/pexels-photo-3596777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     likeCount: 33,
     category: "Accessories",
     owner: "6778ed84ca95ac82a2d2779a",
   },
   {
-    title: "Beachfront Paradise",
+    title: "Casual Beachwear",
     content:
-      "Step out of your door onto the sandy beach. This beachfront condo offers the ultimate relaxation.",
-    image:
-      "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGhvdGVsc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      "Embrace the beach vibes with this comfortable and stylish beachwear. Perfect for sunny escapes.",
+    image: "https://images.pexels.com/photos/3601276/pexels-photo-3601276.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     likeCount: 21,
     category: "Bottomwear",
     owner: "6778ed84ca95ac82a2d27792",
   },
   {
-    title: "Rustic Cabin by the Lake",
+    title: "Bohemian Style Dress",
     content:
-      "Spend your days fishing and kayaking on the serene lake. This cozy cabin is perfect for outdoor enthusiasts.",
-    image:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1vdW50YWlufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+      "Add a touch of boho charm to your wardrobe with this flowing dress. Great for relaxed outings and summer vibes.",
+    image: "https://plus.unsplash.com/premium_photo-1676236306466-25ba882070b3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     likeCount: 54,
     category: "Dresses",
-    owner: "6778ed84ca95ac82a2d27794",
-  },
-  {
-    title: "Luxury Penthouse with City Views",
-    content:
-      "Indulge in luxury living with panoramic city views from this stunning penthouse apartment.",
-    image:
-      "https://images.unsplash.com/photo-1622396481328-9b1b78cdd9fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2t5JTIwdmFjYXRpb258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
-    likeCount: 76,
-    category: "Footwear",
     owner: "6778ed84ca95ac82a2d27796",
   },
   {
-    title: "Ski-In/Ski-Out Chalet",
+    title: "Luxury Handbag Collection",
     content:
-      "Hit the slopes right from your doorstep in this ski-in/ski-out chalet in the Swiss Alps.",
-    image:
-      "https://images.unsplash.com/photo-1502784444187-359ac186c5bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNreSUyMHZhY2F0aW9ufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-    likeCount: 65,
-    category: "Tops",
-    owner: "6778ed84ca95ac82a2d27798",
-  },
-  {
-    title: "Safari Lodge in the Serengeti",
-    content:
-      "Experience the thrill of the wild in a comfortable safari lodge. Witness the Great Migration up close.",
-    image:
-      "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fG1vdW50YWlufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-    likeCount: 54,
-    category: "Dresses",
+      "Elevate your style with our curated selection of luxury handbags. Perfect for any occasion.",
+    image: "https://images.pexels.com/photos/13308447/pexels-photo-13308447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    likeCount: 76,
+    category: "Accessories",
     owner: "6778ed84ca95ac82a2d2779a",
   },
   {
-    title: "Historic Canal House",
+    title: "Classic Denim Jackets",
     content:
-      "Stay in a piece of history in this beautifully preserved canal house in Amsterdam's iconic district.",
-    image:
-      "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FtcGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
-    likeCount: 99,
-    category: "Accessories",
-    owner: "6778ed84ca95ac82a2d27792",
-  },
-  {
-    title: "Private Island Retreat",
-    content:
-      "Have an entire island to yourself for a truly exclusive and unforgettable vacation experience.",
-    image:
-      "https://images.unsplash.com/photo-1618140052121-39fc6db33972?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bG9kZ2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
-    likeCount: 34,
-    category: "Bottomwear",
+      "Stay timeless with our collection of classic denim jackets. A versatile addition to any wardrobe.",
+    image: "https://images.pexels.com/photos/13308438/pexels-photo-13308438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    likeCount: 88,
+    category: "Footwear",
     owner: "6778ed84ca95ac82a2d27794",
   },
   {
-    title: "Charming Cottage in the Cotswolds",
+    title: "Stylish Footwear Collection",
     content:
-      "Escape to the picturesque Cotswolds in this quaint and charming cottage with a thatched roof.",
-    image:
-      "https://images.unsplash.com/photo-1602088113235-229c19758e9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmVhY2glMjB2YWNhdGlvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
-    likeCount: 88,
+      "Walk in style with our latest collection of trendy footwear. Comfort and elegance combined.",
+    image: "https://images.pexels.com/photos/561652/pexels-photo-561652.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    likeCount: 99,
+    category: "Footwear",
+    owner: "6778ed84ca95ac82a2d27792",
+  },
+  {
+    title: "Vibrant Summer Tops",
+    content:
+      "Brighten your wardrobe with our collection of vibrant and stylish summer tops. Perfect for warm days.",
+    image: "https://images.pexels.com/photos/3178767/pexels-photo-3178767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    likeCount: 34,
     category: "Tops",
+    owner: "6778ed84ca95ac82a2d27794",
+  },
+  {
+    title: "Statement Jewelry Pieces",
+    content:
+      "Make a bold statement with our collection of exquisite jewelry pieces. Designed to elevate any outfit.",
+    image: "https://images.pexels.com/photos/839011/pexels-photo-839011.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    likeCount: 65,
+    category: "Accessories",
     owner: "6778ed84ca95ac82a2d27796",
-  }
+  },
 ];
 
 module.exports = { data: sampleListings };

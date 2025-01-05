@@ -79,3 +79,34 @@ export const deletePost = (req: Request, res: Response) => {
             res.status(500).json({ message: (err as Error).message })
         })
 }
+
+export const likeAndComment = (req:Request, res:Response)=>{
+    const id = req.params.id
+    const {comment , liked} = req.body
+    if(liked == 1)
+        Post.findByIdAndUpdate(id,{$inc:{likeCount:1}},{new:true})
+    .then((data) => {
+        res.status(200).json(data)
+        })
+        .catch((err) => {
+            res.status(500).json({ message: (err as Error).message })
+            })
+            else if(liked == -1)
+                Post.findByIdAndUpdate(id,{$inc:{likeCount:-1}},{new:true})
+            .then((data) => {
+                res.status(200).json(data)
+                })
+                .catch((err) => {
+                    res.status(500).json({ message: (err as Error).message })
+                    })
+        //     else if(comment && !liked)
+        //     Post.findByIdAndUpdate(id,
+        // comments.push(comment),{new:true})
+        // .then((data) => {
+        //     res.status(200).json(data)
+        //     })
+        //     .catch((err) => {
+        //         res.status(500).json({ message: (err as Error).message })
+        //         })
+                
+}

@@ -1,6 +1,6 @@
 import express from "express";
 import { userMiddleware } from "../middleware/middleware";
-import { createNewPost, deletePost, showAllPost, showSpecificPost, updatePost } from "../controllers/postController";
+import { createNewPost, deletePost, likeAndComment, showAllPost, showSpecificPost, updatePost } from "../controllers/postController";
 import upload from "./uploader";
 
 
@@ -18,5 +18,7 @@ postRouter.get("/:id",showSpecificPost)
 postRouter.put("/:id",userMiddleware,updatePost)
 
 postRouter.delete("/:id",userMiddleware,deletePost)
+
+postRouter.put("/liked/:id",likeAndComment)
 
 export default postRouter
