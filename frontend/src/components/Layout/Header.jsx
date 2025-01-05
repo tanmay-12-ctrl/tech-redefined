@@ -1,21 +1,43 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuthStore } from '../../store/useAuthStore';
 import './Header.css';
 
 export default function Navbar() {
   const { authUser, checkAuth, logout } = useAuthStore();
+  const [myid, setMyid] = useState();
 
   useEffect(() => {
     checkAuth(); // Ensure the user's auth status is checked on component mount
-  }, []);
+  }, [checkAuth]);
+
+  useEffect(() => {
+    if (authUser) {
+      setMyid(authUser._id);
+    }
+  }, [authUser]);
 
   const handleLogout = async () => {
     await logout(); // Log the user out
   };
 
-
-  const myid=authUser._id;
+  const avatar = myid ? (
+    <Link to={`/profile/${myid}`}>
+      <img
+        src={authUser?.profilePhoto || '/avatar.png'}
+        alt="Profile Avatar"
+        className="rounded-full h-16 w-16 ml-20"
+      />
+    </Link>
+  ) : (
+    <Link>
+      <img
+        src="/avatar.png"
+        alt="Default Avatar"
+        className="rounded-full h-16 w-16 ml-20"
+      />
+    </Link>
+  );
 
   return (
     <nav className="absolute z-10 top-0 left-0 right-0 bg-gradient-to-r from-purple-800 via-black to-purple-800 text-white py-4 px-8 shadow-md">
@@ -73,9 +95,7 @@ export default function Navbar() {
               Upload
             </button>
           </Link>
-          <Link to={`/profile/${myid}`}>
-              <img src={authUser.profilePhoto} alt="" className='rounded-full h-16 w-16 ml-20'/>
-            </Link>
+          {avatar}
 
           {/* Mobile Menu Button */}
           <button className="md:hidden focus:outline-none text-white">
