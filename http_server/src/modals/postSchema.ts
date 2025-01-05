@@ -4,9 +4,9 @@ import { UserDocument } from "./userSchema";
 export interface postDocument{
     title: string;
     content?: string;
-    image : string;
+    image ?: string;
     category ?: "Dresses" | "Outwear" | "Footwear" | "Tops" | "Bottomwear" | "Accessories",
-    likeCount : number;
+    likeCount ?: number;
     owner : UserDocument
 }
 

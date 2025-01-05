@@ -686,3 +686,9 @@
 {"level":"info","message":"Room created: 480c5587 by user 6771299e248b37d631c8e8c4"}
 {"level":"info","message":"User connected: 6771299e248b37d631c8e8c4"}
 {"level":"info","message":"User connected: 677128ab248b37d631c8e8b4"}
+{"level":"info","message":"Server running on port 3001"}
+{"level":"info","message":"Server running on port 3001"}
+{"level":"info","message":"Server running on port 3001"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User disconnected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}

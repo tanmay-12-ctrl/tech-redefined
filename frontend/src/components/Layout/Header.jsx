@@ -14,6 +14,9 @@ export default function Navbar() {
     await logout(); // Log the user out
   };
 
+
+  const myid=authUser._id;
+
   return (
     <nav className="absolute z-10 top-0 left-0 right-0 bg-gradient-to-r from-purple-800 via-black to-purple-800 text-white py-4 px-8 shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -70,6 +73,9 @@ export default function Navbar() {
               Upload
             </button>
           </Link>
+          <Link to={`/profile/${myid}`}>
+              <img src={authUser.profilePhoto} alt="" className='rounded-full h-16 w-16 ml-20'/>
+            </Link>
 
           {/* Mobile Menu Button */}
           <button className="md:hidden focus:outline-none text-white">

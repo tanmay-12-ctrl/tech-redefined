@@ -14,11 +14,15 @@ export const showAllPost = async (req: Request, res: Response) => {
 export const createNewPost = (req: Request, res: Response) => {
     // create new post
     console.log(req.body)
-    const { title, content, image } = req.body
+    console.log("image multe file ",req.file)
+    const { title, content ,owner,category} = req.body
+    const image=req.file?.path
     const newPost = new Post({
         title: title,
         content: content,
-        image: image
+        image: image,
+        owner: owner,
+        category:category
     })
     newPost.save()
         .then((data) => {

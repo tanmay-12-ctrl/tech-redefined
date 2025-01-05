@@ -4,11 +4,11 @@ import { postDocument } from "./postSchema";
 export interface UserDocument{
     _id: string;
     username: string;
-    profilePhoto : string;
-    description : string;
+    profilePhoto ?: string;
+    description ?: string;
     email: string;
     password: string;
-    posts : postDocument[]
+    posts ?: postDocument[]
 }
 
 const UserSchema = new Schema<UserDocument>({

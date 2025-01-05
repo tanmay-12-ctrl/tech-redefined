@@ -94,23 +94,22 @@ export const logoutUser = async(req:Request, res:Response) => {
 
 export const updateProfile = async (req: Request, res: Response) => {
     try {
-        const { userId } = req.params;
-        const { username, profilePhoto, description, email } = req.body;
-
+        const { id } = req.params;
+        const { profilePhoto } = req.body;
+        
         // Validate required fields
-        if (!userId) {
+        if (!id) {
              res.status(400).json({ message: "User ID is required" });
              return
         }
 
         // Find and update the user
         const updatedUser = await User.findByIdAndUpdate(
-            userId,
+          id,
             {
-                username,
+             
                 profilePhoto,
-                description,
-                email,
+                
             },
             { new: true, runValidators: true } // Returns updated user and runs schema validation
         );

@@ -14,7 +14,7 @@ main().then(()=>{
 });
 
 async function main(){
-    await mongoose.connect(Mong_Url_Local);
+    await mongoose.connect(Mongo_Url);
 }
 
 const initDb = async ()=>{

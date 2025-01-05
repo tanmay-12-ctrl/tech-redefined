@@ -5,6 +5,7 @@ const User = require("./userSchema"); // Adjust path to your UserSchema file
 // Replace with your MongoDB connection string
 const Mong_Url_Local = "mongodb://localhost:27017/Zashion"
 
+const Mong_Url_cloud="mongodb+srv://abhinavsmile7:Yiv2jFJkDp15ZkLl@cluster0.hore4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 // User data
 const users = [
   {
@@ -53,7 +54,7 @@ const users = [
 async function seedDatabase() {
   try {
     // Connect to MongoDB
-    await mongoose.connect(Mong_Url_Local, {
+    await mongoose.connect(Mong_Url_cloud, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
