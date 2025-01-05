@@ -6,13 +6,29 @@ const RoomManagement = ({ onJoinRoom, userId }) => {
   const [joinCode, setJoinCode] = useState('');
   const [ws, setWs] = useState(null);
   const [userData, setUserData] = useState(null);
+  const [showModal , setShowModal] = useState(false)
+  const [inputRoomId, setInputRoomId] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleJoinRoom = () => {
+    console.log(joinCode)
+      ws.send(
+        JSON.stringify({
+          type: 'join-room',
+          roomId: inputRoomId,
+        }))
+      
+      setShowModal(false);
+      setErrorMessage('');
+      alert('Successfully joined the room!');
+    
+  };
 
   useEffect(() => {
     const socket = new WebSocket('ws://localhost:3001');
 
     socket.onopen = () => {
       // Send the user ID to initialize the user on the backend
-      console.log(userId)
       socket.send(JSON.stringify({ type: 'init-user', userId }));
     };
 
@@ -63,16 +79,16 @@ const RoomManagement = ({ onJoinRoom, userId }) => {
   };
 
   return (
-    <div className="min-h-screen p-8">
+    <div className="min-h-screen w-screen p-8">
       <div className="max-w-4xl mx-auto space-y-50">
         {userData && (
-          <div className="bg-white rounded-lg shadow p-6 mb-6">
+          <div className="bg-[#181414] rounded-lg shadow p-6 mb-6">
             <h2 className="text-2xl font-bold mb-4">Welcome, {userData.username}!</h2>
             <p className="text-gray-600">Email: {userData.email}</p>
           </div>
         )}
 
-<div className="bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 rounded-lg shadow p-6 mb-6">
+<div className="bg-[#181414] shadow p-6 mb-6">
 
           <h2 className="text-2xl font-bold mb-4">Create New Room</h2>
           <div className="flex gap-4">
@@ -81,7 +97,7 @@ const RoomManagement = ({ onJoinRoom, userId }) => {
               value={roomName}
               onChange={(e) => setRoomName(e.target.value)}
               placeholder="Room Name"
-              className="flex-1 p-2 border-2 rounded-lg bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-300"
+              className="flex-1 p-2 border-2 rounded-lg bg-[#181414] text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-300"
               style={{ color: 'black' }}
             />
             <button
@@ -93,7 +109,7 @@ const RoomManagement = ({ onJoinRoom, userId }) => {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 rounded-lg shadow p-6 mb-6">
+        <div className="bg-[#181414] rounded-lg shadow p-6 mb-6">
           <h2 className="text-2xl font-bold mb-4">Join with Code</h2>
           <div className="flex gap-4">
             <input
@@ -101,7 +117,7 @@ const RoomManagement = ({ onJoinRoom, userId }) => {
               value={joinCode}
               onChange={(e) => setJoinCode(e.target.value)}
               placeholder="Enter Room Code"
-              className="flex-1 p-2 border-2 rounded-lg bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-300"
+              className="flex-1 p-2 border-2 rounded-lg bg-[#181414] text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-300"
               style={{ color: 'black' }}
             />
             <button
@@ -113,31 +129,57 @@ const RoomManagement = ({ onJoinRoom, userId }) => {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-yellow-500  to-blue-500 rounded-lg shadow p-6">
-          <h2 className="text-2xl font-bold mb-4 text-black">Available Rooms</h2>
+        <div className="bg-[#181414] rounded-lg shadow p-6">
+          <h2 className="text-2xl font-bold mb-4 text-white">Available Rooms</h2>
           <div className="grid gap-4">
             {rooms.map((room) => (
               <div key={room.id} className="border rounded p-4 flex justify-between items-center">
                 <div>
-                  <h3 className="font-semibold text-black">{room.name}</h3>
+                  <h3 className="font-semibold text-white">{room.name}</h3>
                   <p className="text-sm text-gray-500">{room.participants} participants</p>
                 </div>
                 <button
                   onClick={() => {
-                    ws.send(
-                      JSON.stringify({
-                        type: 'join-room',
-                        roomId: room.id,
-                      })
-                    );
+                    setShowModal(true)
                   }}
                   className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
                 >
                   Join
                 </button>
+
               </div>
             ))}
+            
           </div>
+          {showModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+          <div className="bg-white p-6 rounded shadow-lg">
+            <h2 className="text-xl font-bold mb-4">Enter Room ID</h2>
+            <input
+              type="text"
+              value={inputRoomId}
+              onChange={(e) => setInputRoomId(e.target.value)}
+              className="border p-2 w-full rounded mb-2"
+              placeholder="Enter Room ID"
+            />
+            {errorMessage && <p className="text-red-500">{errorMessage}</p>}
+            <div className="flex justify-end space-x-2">
+              <button
+                onClick={() => setShowModal(false)}
+                className="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={(handleJoinRoom)}
+                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+              >
+                Join Room
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
         </div>
       </div>
     </div>

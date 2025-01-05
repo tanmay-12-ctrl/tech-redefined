@@ -44,3 +44,28 @@ export const getPrediction = async(req:Request , res : Response)=>{
     res.status(500).json({ error: 'Prediction failed' });
   }
 }
+
+export const topUser = async (req: Request, res: Response): Promise<void> => {
+  try {
+    // Fetch all users from the database
+    const users = await User.find().populate('posts');
+
+    // Calculate totalLikes for each user
+    const usersWithTotalLikes = users.map(user => ({
+      ...user.toObject(), // Convert Mongoose document to plain object
+      totalLikes: user.posts.reduce((sum, post) => sum + (post.likeCount), 0),
+    }));
+
+    // Sort users by totalLikes in descending order and take the top 5
+    const topUsers = usersWithTotalLikes
+      .sort((a, b) => b.totalLikes - a.totalLikes)
+      .slice(0, 5);
+
+    // Respond with the top 5 users
+    res.status(200).json({ success: true, data: topUsers });
+  } catch (error) {
+    console.error('Error fetching top users:', error);
+    res.status(500).json({ success: false, message: 'Failed to fetch top users.' });
+  }
+};
+
