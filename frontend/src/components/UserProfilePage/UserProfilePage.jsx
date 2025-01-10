@@ -57,12 +57,12 @@ const UserProfile = () => {
 
   return (
     <div
-      className="bg-gradient-to-b from-purple-50 to-white min-h-screen px-16"
+      className="bg-black min-h-screen px-16"
       style={{ borderRadius: "20px" }}
     >
       <div className="container mx-auto px-4 py-12">
         {/* Header Section */}
-        <div className="bg-white rounded-2xl shadow-sm p-8 flex flex-col md:flex-row items-center md:items-start gap-8">
+        <div className="bg-black rounded-2xl shadow-sm p-8 flex flex-col md:flex-row items-center md:items-start gap-8">
           {/* Profile Picture Section */}
           <div className="relative group">
             <div className="w-48 h-48 rounded-full overflow-hidden ring-4 ring-purple-100">
@@ -90,34 +90,34 @@ const UserProfile = () => {
           {/* User Info */}
           <div className="flex-1 text-center md:text-left">
             <div className="flex flex-col md:flex-row items-center gap-4 mb-6">
-              <h1 className="text-3xl font-bold text-gray-800">{data.username}</h1>
+              <h1 className="text-3xl font-bold text-white">{data.username}</h1>
               <div className="flex gap-3">
                 <button className="px-6 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
                   Follow
                 </button>
                 <button className="p-2 rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors">
-                  <Settings className="w-5 h-5 text-gray-600" />
+                  <Settings className="w-5 h-5 text-white" />
                 </button>
               </div>
             </div>
 
             <div className="flex justify-center md:justify-start gap-8 mb-6">
               <div className="text-center">
-                <div className="text-xl font-bold text-gray-800">{data.posts.length}</div>
+                <div className="text-xl font-bold text-white">{data.posts.length}</div>
                 <div className="text-sm text-gray-500">posts</div>
               </div>
               <div className="text-center">
-                <div className="text-xl font-bold text-gray-800">4,073</div>
+                <div className="text-xl font-bold text-white">4,073</div>
                 <div className="text-sm text-gray-500">followers</div>
               </div>
               <div className="text-center">
-                <div className="text-xl font-bold text-gray-800">322</div>
-                <div className="text-sm text-gray-500">following</div>
+                <div className="text-xl font-bold text-white">322</div>
+                <div className="text-sm text-white">following</div>
               </div>
             </div>
 
             <div>
-              <h2 className="text-xl font-bold text-gray-800 mb-2">{data.username}</h2>
+              <h2 className="text-xl font-bold text-white mb-2">{data.username}</h2>
               <p className="text-gray-600">{data.description || "UX/UI Designer"}</p>
             </div>
           </div>

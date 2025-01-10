@@ -20,7 +20,7 @@ const cors_1 = __importDefault(require("cors"));
 const winston_1 = __importDefault(require("winston"));
 const mongoose_1 = __importDefault(require("mongoose"));
 const userSchema_1 = require("./userSchema");
-const MongoDb_Url_Local = "mongodb://localhost:27017/Zashion";
+const MongoDb_Url_Local = "mongodb+srv://abhinavsmile7:Yiv2jFJkDp15ZkLl@cluster0.hore4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 // Initialize logger
 const logger = winston_1.default.createLogger({
     level: 'info',

@@ -28,8 +28,11 @@ const RoomManagement = ({ onJoinRoom, userId }) => {
     const socket = new WebSocket('ws://localhost:3001');
 
     socket.onopen = () => {
+
+      console.log("userid",userId);
       // Send the user ID to initialize the user on the backend
       socket.send(JSON.stringify({ type: 'init-user', userId }));
+      
     };
 
     socket.onmessage = (event) => {
@@ -60,6 +63,7 @@ const RoomManagement = ({ onJoinRoom, userId }) => {
 
   const createRoom = () => {
     if (!roomName.trim()) return;
+    console.log("roomName",roomName)
     ws.send(
       JSON.stringify({
         type: 'create-room',
@@ -98,7 +102,7 @@ const RoomManagement = ({ onJoinRoom, userId }) => {
               onChange={(e) => setRoomName(e.target.value)}
               placeholder="Room Name"
               className="flex-1 p-2 border-2 rounded-lg bg-[#181414] text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-300"
-              style={{ color: 'black' }}
+              style={{ color: 'white' }}
             />
             <button
               onClick={createRoom}
@@ -118,7 +122,7 @@ const RoomManagement = ({ onJoinRoom, userId }) => {
               onChange={(e) => setJoinCode(e.target.value)}
               placeholder="Enter Room Code"
               className="flex-1 p-2 border-2 rounded-lg bg-[#181414] text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-300"
-              style={{ color: 'black' }}
+              style={{ color: 'white' }}
             />
             <button
               onClick={joinRoomWithCode}

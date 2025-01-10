@@ -54,7 +54,7 @@ else{
   return (
     <div className="w-screen px-32 pb-20">
     <div className="min-h-[calc(100vh-64px)]  rounded-2xl">
-      <div className="max-w-6xl mx-auto bg-gradient-to-br from-teal-200 to-red-300 rounded-2xl shadow-2xl overflow-hidden">
+      <div className="max-w-6xl mx-auto bg-black rounded-2xl shadow-2xl overflow-hidden">
         <div className="flex flex-col md:flex-row h-full">
           {/* Left Section */}
           <div className="md:w-2/3 border-r border-gray-200 p-6">
@@ -66,7 +66,7 @@ else{
                 alt="Creator Avatar"
                 className="w-16 h-16 rounded-full object-cover shadow-lg"
               />
-              <span className="font-semibold text-xl text-gray-800">{data.owner.username}</span>
+              <span className="font-semibold text-xl text-white">{data.owner.username}</span>
             </div>
             </button>
 
@@ -89,18 +89,18 @@ else{
                 {liked ? (
                   <FilledHeartIcon className="w-6 h-6 text-red-500" />
                 ) : (
-                  <HeartIcon className="w-6 h-6 text-gray-600" />
+                  <HeartIcon className="w-6 h-6 text-white" />
                 )}
               </button>
-              <b><span className="text-2xl text-red-600">{data.likeCount}</span></b>
+              <b><span className="text-2xl text-white">{data.likeCount}</span></b>
             </div>
 
             {/* Details */}
             <div className="space-y-4">
-              <p className="font-semibold text-2xl text-gray-800">
+              <p className="font-semibold text-2xl text-white">
                 {data.title}
               </p>
-              <p className="text-lg text-gray-600">
+              <p className="text-lg text-white">
                 {data.content}
               </p>
             </div>
@@ -109,15 +109,15 @@ else{
           {/* Right Section - Comments */}
           <div className="md:w-1/3 flex flex-col h-full p-6">
             <div className="mb-6">
-              <h3 className="font-semibold text-xl text-gray-800">Comments</h3>
+              <h3 className="font-semibold text-xl text-white">Comments</h3>
             </div>
 
             {/* Comments List */}
             <div className="flex-1 overflow-y-auto space-y-4 mb-6">
               {comments.map((c, index) => (
                 <div key={index} className="flex gap-2 items-start">
-                  <span className="font-semibold text-gray-800">{c.user}</span>
-                  <span className="text-gray-600">{c.comment}</span>
+                  <span className="font-semibold text-white">{c.user}</span>
+                  <span className="text-white">{c.comment}</span>
                 </div>
               ))}
             </div>

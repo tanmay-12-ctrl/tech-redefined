@@ -2703,3 +2703,118 @@
 {"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
 {"level":"info","message":"User disconnected: unknown"}
 {"level":"info","message":"User disconnected: unknown"}
+{"level":"info","message":"Server running on port 3001"}
+{"level":"error","message":"User not initialized"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"User not initialized"}
+{"level":"error","message":"User not initialized"}
+{"level":"error","message":"User not initialized"}
+{"level":"error","message":"User not initialized"}
+{"level":"error","message":"User not initialized"}
+{"level":"error","message":"User not initialized"}
+{"level":"error","message":"User not initialized"}
+{"level":"error","message":"User not initialized"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"Server running on port 3001"}
+{"level":"error","message":"User not initialized"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"User not initialized"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"Failed to fetch user data for userId: 6778f3f8dbc437d7b2ca6333"}
+{"level":"error","message":"User not initialized"}
+{"level":"error","message":"User not initialized"}
+{"level":"info","message":"Server running on port 3001"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"Room created: 0180eccb by user 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User disconnected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"Room deleted: 0180eccb"}
+{"level":"info","message":"User disconnected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User disconnected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"Room created: ac8829db by user 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"Room created: e67e0076 by user 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"Room created: 29cb438d by user 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User disconnected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"Room deleted: 29cb438d"}
+{"level":"info","message":"User disconnected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"Room deleted: e67e0076"}
+{"level":"info","message":"User disconnected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User disconnected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"Room deleted: ac8829db"}
+{"level":"info","message":"User disconnected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User disconnected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User disconnected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User disconnected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User disconnected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User disconnected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User disconnected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"Room created: cb1e9dbb by user 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"Room deleted: cb1e9dbb"}
+{"level":"info","message":"User disconnected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"Server running on port 3001"}
+{"level":"info","message":"Server running on port 3001"}
+{"level":"info","message":"User connected: 6778ed84ca95ac82a2d27792"}
+{"level":"info","message":"Room created: 196e09ff by user 6778ed84ca95ac82a2d27792"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User disconnected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"Room deleted: 196e09ff"}
+{"level":"info","message":"User disconnected: 6778ed84ca95ac82a2d27792"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778ed84ca95ac82a2d27792"}
+{"level":"info","message":"User connected: 6778ed84ca95ac82a2d27792"}
+{"level":"info","message":"User connected: 6778ed84ca95ac82a2d27792"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"Room created: 2141b8b0 by user 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778ed84ca95ac82a2d27792"}
+{"level":"warn","message":"Join-room failed: Room  2141b8b0 not found for user 6778ed84ca95ac82a2d27792"}
+{"level":"warn","message":"Join-room failed: Room  2141b8b0 not found for user 6778ed84ca95ac82a2d27792"}
+{"level":"warn","message":"Join-room failed: Room  2141b8b0 not found for user 6778ed84ca95ac82a2d27792"}
+{"level":"warn","message":"Join-room failed: Room  2141b8b0 not found for user 6778ed84ca95ac82a2d27792"}
+{"level":"warn","message":"Join-room failed: Room  2141b8b0 not found for user 6778ed84ca95ac82a2d27792"}
+{"level":"warn","message":"Join-room failed: Room  2141b8b0 not found for user 6778ed84ca95ac82a2d27792"}
+{"level":"warn","message":"Join-room failed: Room  2141b8b0 not found for user 6778ed84ca95ac82a2d27792"}
+{"level":"info","message":"User connected: 6778ed84ca95ac82a2d27792"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"Room created: b6cf4cb4 by user 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"Room created: f68bcef0 by user 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"User connected: 6778ed84ca95ac82a2d27792"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"Server running on port 3001"}
+{"level":"info","message":"User connected: 6778f3f8dbc437d7b2ca6333"}
+{"level":"info","message":"Room created: f238ebff by user 6778f3f8dbc437d7b2ca6333"}

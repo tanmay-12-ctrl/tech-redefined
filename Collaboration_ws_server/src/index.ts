@@ -7,7 +7,7 @@ import winston from 'winston';
 import mongoose from 'mongoose';
 import { User } from './userSchema';
 
-const MongoDb_Url_Local = "mongodb://localhost:27017/Zashion"
+const MongoDb_Url_Local = "mongodb+srv://abhinavsmile7:Yiv2jFJkDp15ZkLl@cluster0.hore4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 interface ShapeData {
     rectangles: any[];
